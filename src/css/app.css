@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* App.css */
+
+.load_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* pc 버전 */
+@media screen and (min-width:768px) {
+  .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #ccc;
+    width: 180px; height: 100vh;
+  }
+
+  .header h1 {
+    text-align: center;
+    padding: 15px 0px;
+  }
+  
+  main {
+    position: absolute;
+    width: calc(width - 180px);
+    left: 180px;
+    top: 0px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+}
+
+/*모바일 */
+@media screen and (max-width:767px) {
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
+
+  .header h1 {
+    text-align: center;
+  }
+
+}
